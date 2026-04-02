@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Черный властелин мемов</title>
+    <title>Серёга - пятяшуок</title>
     <meta
       name="description"
-      content="Юмористический мем-лендинг про Черного властелина мемов."
+      content="Юмористический мем-лендинг про Серёгу-пятяшука."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -87,6 +87,18 @@
         padding: clamp(1.2rem, 2vw, 2.2rem);
         background: linear-gradient(155deg, rgba(17, 17, 28, 0.92), rgba(26, 18, 43, 0.9));
         box-shadow: var(--shadow-glow);
+      }
+
+      .hero-photo {
+        margin: 0.9rem 0 0.8rem;
+      }
+
+      .hero-photo img {
+        width: min(250px, 100%);
+        border-radius: 14px;
+        border: 1px solid rgba(168, 85, 247, 0.6);
+        box-shadow: 0 14px 24px rgba(0, 0, 0, 0.35), var(--shadow-glow);
+        display: block;
       }
 
       .badge {
@@ -318,6 +330,11 @@
           border-radius: 18px;
         }
 
+        .hero-photo img {
+          width: 100%;
+          max-width: 260px;
+        }
+
         .actions-row {
           flex-direction: column;
         }
@@ -333,8 +350,11 @@
 
     <main class="container">
       <section class="hero fade-in">
-        <span class="badge">В эфире: Черный властелин мемов</span>
-        <h1>Черный Властелин Мемов</h1>
+        <span class="badge">В эфире: Серёга - пятяшуок</span>
+        <h1>Серёга - пятяшуок</h1>
+        <div class="hero-photo">
+          <img src="./seroga.jpg" alt="Серёга в мемном образе" loading="eager" />
+        </div>
         <p>
           Он не захватывает планеты. Он захватывает комментарии. Его трон сделан из
           старых шаблонов, а корона мигает как уведомления в 3:07 ночи.
@@ -457,7 +477,7 @@
         Министерство Мемного Баланса предупреждает: длительное пребывание на сайте может
         вызвать внезапное "ахаха" в общественном транспорте.
       </p>
-      <p class="footer-joke">© Черный Властелин Мемов. Все права на шутки не слишком серьезные.</p>
+      <p class="footer-joke">© Серёга - пятяшуок. Все права на шутки не слишком серьезные.</p>
     </footer>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
